@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himawari - Fresh Japanese Vegetables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#EA580C',
+              'brand-primary-light': '#FFF7ED',
+              'brand-secondary': '#4B5563',
+              'brand-accent': '#10B981',
+              'brand-surface': '#FFFFFF',
+              'brand-text-main': '#1F2937',
+              'brand-text-light': '#6B7280',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+               'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.4s ease-out forwards',
+              'fade-in': 'fade-in 0.5s ease-in-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.525.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
